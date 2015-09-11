@@ -3,9 +3,9 @@
 
 How to get started:
 1. Define parameters for the star, planet and moon [all as floats]:
-  *Star: Stellar radius, limb-darkening parameters
-  *Planet: Radius, semimajor axis, impact parameter, period
-  *Moon: Radius, semimajor axis, eccentricity, ascending node, longitude at periastron, inclination
+  * Star: Stellar radius, limb-darkening parameters
+  * Planet: Radius, semimajor axis, impact parameter, period
+  * Moon: Radius, semimajor axis, eccentricity, ascending node, longitude at periastron, inclination
 
 2. Define simulation parameters:
 ⋅⋅* Account for mutual planet/moon eclipses [bool]
