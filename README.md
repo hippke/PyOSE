@@ -21,7 +21,7 @@ How to get started:
  
 ![ScreenShot](http://www.jaekle.info/osescreenshots/git1.png)
 
-As this plot is for illustration purpose only, we visualize the Sun-Earth-Moon system but we scale the physical radii of Earth and the Moon by a factor of ten to make their disks visible against the solar disk. \textcolor{red}{The impact parameters of the planet ($b_{\rm p}=0.4$) and the moon's Keplerian elements ($e_{\rm s}=0.7$, $i_{\rm s}=83\degrees$, $\Omega$=0.7) are chosen arbitrarily for good visual clarity.
+As this plot is for illustration purpose only, we visualize the Sun-Earth-Moon system but we scale the physical radii of Earth and the Moon by a factor of ten to make their disks visible against the solar disk. The impact parameters of the planet (b_=0.4) and the moon's Keplerian elements (e_=0.7, i=83°, Omega=0.7) are chosen arbitrarily for good visual clarity. The plot shows the situation at planetary mid-transit.
 
 #### Generate a riverplot covering phase 0..1:
 
