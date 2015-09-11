@@ -17,11 +17,11 @@ How to get started:
   *  Moon phase to highlight in plots [0..1]
   *  Quality setting [integer, defines pixel radius of star; scales other bodies]
    
-3. Generate a 3D-view of these parameters for visual verification:
+### Generate a 3D-view of these parameters for visual verification:
  
-[ScreenShot](http://www.jaekle.info/osescreenshots/git1.png)
+![ScreenShot](http://www.jaekle.info/osescreenshots/git1.png)
 
-4. Generate a riverplot covering phase 0..1:
+Generate a riverplot covering phase 0..1:
 
 ![ScreenShot](http://www.jaekle.info/osescreenshots/git2.png)
 
