@@ -21,11 +21,17 @@ How to get started:
  
 ![ScreenShot](http://www.jaekle.info/osescreenshots/git1.png)
 
-As this plot is for illustration purpose only, we visualize the Sun-Earth-Moon system but we scale the physical radii of Earth and the Moon by a factor of ten to make their disks visible against the solar disk. The impact parameters of the planet (b_=0.4) and the moon's Keplerian elements (e_=0.7, i=83°, Omega=0.7) are chosen arbitrarily for good visual clarity. The plot shows the situation at planetary mid-transit.
+As this plot is for illustration purpose only, we visualize the Sun-Earth-Moon system but we scale the physical radii of Earth and the Moon by a factor of ten to make their disks visible against the solar disk. The impact parameters of the planet (b=0.4) and the moon's Keplerian elements (e=0.7, i=83°, Omega=0.7) are chosen arbitrarily for good visual clarity. The plot shows the situation at planetary mid-transit.
+
+In our numerical implementation, the planet-moon ensemble transits the star from left to right. The motion of the planet and the moon around their common barycenter during transit can be included, or neglected, in our code. For most purposes, it is useful to neglect this motion, as the converged OSE curve will not be affected as the motion of both the planet and the moon would be smeared out and averaged in a phase-folded light curve anyways.
 
 #### Generate a riverplot covering phase 0..1:
 
 ![ScreenShot](http://www.jaekle.info/osescreenshots/git2.png)
+
+Using PyOSE, we simulate one planetary transit and a range of moon transits for various orbital positions of the moon using the transit model of Mandel & Agol (2002). The planetary transit and the averaged moon transit light curve are then combined into one pseudo-phase-folded, average light curve that contains the OSE. For the moon transits, we sample n transits equally spaced in time. Of course, for eccentric moon orbits, the satellite's orbital speed varies, so that when sampling time in equal steps, the satellite's positional change is also variable. Our code fully acounts for this.
+
+The plot shows the current moon's position (triangle), as in the figure above. Times of mutual planet/moon transits around phase=0 and phase=0.8 cause less flux loss due to the moon, and are shown in white color. 
 
 #### Generate the stacked lightcurve:
 
