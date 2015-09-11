@@ -9,21 +9,24 @@ How to get started:
   * Moon: Radius, semimajor axis, eccentricity, ascending node, longitude at periastron, inclination
 
 2. Define simulation parameters:
-⋅⋅* Account for mutual planet/moon eclipses [bool]
-⋅⋅* Show the planet in the plots [bool]
-⋅⋅* Add noise to the simulation [ppm/minute, can be zero]
-⋅⋅* How many transits are to be sampled [integer]
-⋅⋅* How many (randomly chosen) transits are observed [integer, 0=all]
-⋅⋅* Moon phase to highlight in plots [0..1]
-⋅⋅* Quality setting [integer, defines pixel radius of star; scales other bodies]
+  *  Account for mutual planet/moon eclipses [bool]
+  *  Show the planet in the plots [bool]
+  *  Add noise to the simulation [ppm/minute, can be zero]
+  *  How many transits are to be sampled [integer]
+  *  How many (randomly chosen) transits are observed [integer, 0=all]
+  *  Moon phase to highlight in plots [0..1]
+  *  Quality setting [integer, defines pixel radius of star; scales other bodies]
    
 3. Generate a 3D-view of these parameters for visual verification:
+4. 
 ![ScreenShot](http://www.jaekle.info/osescreenshots/git1.png)
 
 4. Generate a riverplot covering phase 0..1:
+5. 
 ![ScreenShot](http://www.jaekle.info/osescreenshots/git2.png)
 
 5. Generate the stacked lightcurve:
+6. 
 ![ScreenShot](http://www.jaekle.info/osescreenshots/git3.png)
 
 6. Calculate the total occulted stellar flux: 
