@@ -21,7 +21,7 @@ How to get started:
  
 ![ScreenShot](http://www.jaekle.info/osescreenshots/git1.png)
 
-Generate a riverplot covering phase 0..1:
+#### Generate a riverplot covering phase 0..1:
 
 ![ScreenShot](http://www.jaekle.info/osescreenshots/git2.png)
 
