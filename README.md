@@ -19,7 +19,7 @@ How to get started:
    
 3. Generate a 3D-view of these parameters for visual verification:
  
-![ScreenShot](http://www.jaekle.info/osescreenshots/git1.png)
+[ScreenShot](http://www.jaekle.info/osescreenshots/git1.png)
 
 4. Generate a riverplot covering phase 0..1:
 
