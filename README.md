@@ -2,7 +2,9 @@
 *We are currently preparing a paper to introduce this new code. Until then, please refer to OSE, Heller 2014, ApJ 787*
 
 How to get started:
+
 1. Define parameters for the star, planet and moon [all as floats]:
+
   * Star: Stellar radius, limb-darkening parameters
   * Planet: Radius, semimajor axis, impact parameter, period
   * Moon: Radius, semimajor axis, eccentricity, ascending node, longitude at periastron, inclination
