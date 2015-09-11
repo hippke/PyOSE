@@ -3,18 +3,18 @@
 
 How to get started:
 1. Define parameters for the star, planet and moon [all as floats]:
-   Star: Stellar radius, limb-darkening parameters
-   Planet: Radius, semimajor axis, impact parameter, period
-   Moon: Radius, semimajor axis, eccentricity, ascending node, longitude at periastron, inclination
+⋅⋅* Star: Stellar radius, limb-darkening parameters
+⋅⋅* Planet: Radius, semimajor axis, impact parameter, period
+⋅⋅* Moon: Radius, semimajor axis, eccentricity, ascending node, longitude at periastron, inclination
 
 2. Define simulation parameters:
-   Account for mutual planet/moon eclipses [bool]
-   Show the planet in the plots [bool]
-   Add noise to the simulation [ppm/minute, can be zero]
-   How many transits are to be sampled [integer]
-   How many (randomly chosen) transits are observed [integer, 0=all]
-   Moon phase to highlight in plots [0..1]
-   Quality setting [integer, defines pixel radius of star; scales other bodies]
+⋅⋅* Account for mutual planet/moon eclipses [bool]
+⋅⋅* Show the planet in the plots [bool]
+⋅⋅* Add noise to the simulation [ppm/minute, can be zero]
+⋅⋅* How many transits are to be sampled [integer]
+⋅⋅* How many (randomly chosen) transits are observed [integer, 0=all]
+⋅⋅* Moon phase to highlight in plots [0..1]
+⋅⋅* Quality setting [integer, defines pixel radius of star; scales other bodies]
    
 3. Generate a 3D-view of these parameters for visual verification:
 ![ScreenShot](http://www.jaekle.info/osescreenshots/git1.png)
