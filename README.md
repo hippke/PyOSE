@@ -1,5 +1,5 @@
 ## Stacked exomoons with the Orbital Sampling Effect 
-*We are currently preparing a paper to introduce this new code. Until then, please refer to (OSE, Heller 2014, ApJ 787)*
+*We are currently preparing a paper to introduce this new code. Until then, please refer to OSE, Heller 2014, ApJ 787*
 
 How to get started:
 1. Define parameters for the star, planet and moon [all as floats]:
