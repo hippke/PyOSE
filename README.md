@@ -1,5 +1,4 @@
-@@ -1 +1,31 @@
-Stacked exomoons with the Orbital Sampling Effect (OSE, Heller 2014, ApJ 787)
+## Stacked exomoons with the Orbital Sampling Effect (OSE, Heller 2014, ApJ 787)
 We are currently preparing a paper to introduce this new code.
 
 How to get started:
@@ -30,4 +29,3 @@ How to get started:
 -7916.17381004 ppm hrs
 
 You can save all figures as PDF, PNG, EPS, etc., and the time/flux data as CSV, Excel etc.
-\ No newline at end of file
