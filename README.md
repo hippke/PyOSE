@@ -18,15 +18,15 @@ How to get started:
   *  Quality setting [integer, defines pixel radius of star; scales other bodies]
    
 3. Generate a 3D-view of these parameters for visual verification:
-4. 
+ 
 ![ScreenShot](http://www.jaekle.info/osescreenshots/git1.png)
 
 4. Generate a riverplot covering phase 0..1:
-5. 
+
 ![ScreenShot](http://www.jaekle.info/osescreenshots/git2.png)
 
 5. Generate the stacked lightcurve:
-6. 
+
 ![ScreenShot](http://www.jaekle.info/osescreenshots/git3.png)
 
 6. Calculate the total occulted stellar flux: 
