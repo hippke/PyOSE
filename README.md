@@ -29,13 +29,13 @@ In our numerical implementation, the planet-moon ensemble transits the star from
 
 ![ScreenShot](http://www.jaekle.info/osescreenshots/git2.png)
 
-Using PyOSE, we simulate one planetary transit and a range of moon transits for various orbital positions of the moon using the transit model of Mandel & Agol (2002). The planetary transit and the averaged moon transit light curve are then combined into one pseudo-phase-folded, average light curve that contains the OSE. For the moon transits, we sample n transits equally spaced in time. Of course, for eccentric moon orbits, the satellite's orbital speed varies, so that when sampling time in equal steps, the satellite's positional change is also variable. Our code fully acounts for this.
-
-The plot shows the current moon's position (triangle), as in the figure above. Times of mutual planet/moon transits around phase=0 and phase=0.8 cause less flux loss due to the moon, and are shown in white color. 
+This river plot shows the current moon's position (triangle), as in the figure above. Times of mutual planet/moon transits around phase=0 and phase=0.8 cause less flux loss due to the moon, and are shown in white color. 
 
 #### Generate the stacked lightcurve:
 
 ![ScreenShot](http://www.jaekle.info/osescreenshots/git3.png)
+
+Using PyOSE, we simulate one planetary transit and a range of moon transits for various orbital positions of the moon using the transit model of Mandel & Agol (2002). The planetary transit and the averaged moon transit light curve are then combined into one pseudo-phase-folded, average light curve that contains the OSE. For the moon transits, we sample n transits equally spaced in time. Of course, for eccentric moon orbits, the satellite's orbital speed varies, so that when sampling time in equal steps, the satellite's positional change is also variable. Our code fully accounts for this.
 
 #### Calculate the total occulted stellar flux: 
 ```
