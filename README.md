@@ -17,7 +17,7 @@ How to get started:
   *  Moon phase to highlight in plots [0..1]
   *  Quality setting [integer, defines pixel radius of star; scales other bodies]
    
-### Generate a 3D-view of these parameters for visual verification:
+#### Generate a 3D-view of these parameters for visual verification:
  
 ![ScreenShot](http://www.jaekle.info/osescreenshots/git1.png)
 
@@ -25,11 +25,13 @@ Generate a riverplot covering phase 0..1:
 
 ![ScreenShot](http://www.jaekle.info/osescreenshots/git2.png)
 
-5. Generate the stacked lightcurve:
+#### Generate the stacked lightcurve:
 
 ![ScreenShot](http://www.jaekle.info/osescreenshots/git3.png)
 
-6. Calculate the total occulted stellar flux: 
+#### Calculate the total occulted stellar flux: 
+```
 -7916.17381004 ppm hrs
+```
 
 You can save all figures as PDF, PNG, EPS, etc., and the time/flux data as CSV, Excel etc.
