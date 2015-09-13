@@ -21,6 +21,8 @@ How to get started:
  
 ![ScreenShot](http://www.jaekle.info/osescreenshots/git1.png)
 
+[Klick here for an animation at mid-transit.](http://jaekle.info/osescreenshots/osegif.gif)
+
 As this plot is for illustration purpose only, we visualize the Sun-Earth-Moon system but we scale the physical radii of Earth and the Moon by a factor of ten to make their disks visible against the solar disk. The impact parameters of the planet (b=0.4) and the moon's Keplerian elements (e=0.7, i=83°, Omega=0.7) are chosen arbitrarily for good visual clarity. The plot shows the situation at planetary mid-transit.
 
 In our numerical implementation, the planet-moon ensemble transits the star from left to right. The motion of the planet and the moon around their common barycenter during transit can be included, or neglected, in our code. For most purposes, it is useful to neglect this motion, as the converged OSE curve will not be affected as the motion of both the planet and the moon would be smeared out and averaged in a phase-folded light curve anyways.
