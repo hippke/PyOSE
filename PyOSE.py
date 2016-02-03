@@ -31,7 +31,7 @@ import numpy as np
 from numpy import pi, sqrt, sin, cos, arcsin, arccos, radians, power, degrees
 from PyAstronomy import pyasl
 from PyAstronomy.modelSuite import forTrans
-
+from matplotlib.pyplot import cm
 
 def modelview(
     StellarRadius, limb1, limb2, PlanetRadius, PlanetImpact, MoonRadius, 
@@ -44,9 +44,16 @@ def modelview(
     MoonRadius = MoonRadius / StellarRadius
     MoonAxis = MoonAxis / StellarRadius
 
-    # Make background black
-    allblack = plt.Circle((0, 0), 100, color=(1, 1, 1))
-    plt.gcf().gca().add_artist(allblack)
+    # Make background unicolor black or white
+    #allwhite = plt.Circle((0, 0), 100, color=(1, 1, 1))
+    #allblack = plt.Circle((0, 0), 100, color=(0, 0, 0))    
+    #plt.gcf().gca().add_artist(allwhite)
+
+    # Alternatively plot a gradient map as background
+    X = [[-1, 0], [0, 1]]
+    plt.imshow(X, interpolation='bicubic', cmap=cm.gray,
+          extent=(-1.1, 1.1, -1.1, 1.1), alpha=1)
+
 
     # Star
     StarQuality = Quality
@@ -56,7 +63,8 @@ def modelview(
         Impact = i / float(StarQuality)
         LimbDarkening = QuadraticLimbDarkening(Impact, limb1, limb2)
         Sun = plt.Circle((0, 0), 1 - i / float(StarQuality), 
-            color=(LimbDarkening, LimbDarkening, 0))
+            color=(LimbDarkening, LimbDarkening, LimbDarkening))
+        # for a yellow shaded star, replace the last LimbDarkening with 0
         plt.gcf().gca().add_artist(Sun)
 
     # Moon's orbit: Kepler ellipse normalized to 1x1 stellar radii
@@ -84,15 +92,15 @@ def modelview(
         FirstOcculted = OccultedDataPoints[0]
         LastOcculted  = OccultedDataPoints[-1] + 1
         plt.plot(-coordinates[:FirstOcculted,0], 
-                  coordinates[:FirstOcculted,1] + PlanetImpact, 'r', zorder = 5)
+                  coordinates[:FirstOcculted,1] + PlanetImpact, 'k', zorder = 5)
         plt.plot(-coordinates[LastOcculted:,0], 
-                  coordinates[LastOcculted:,1]  + PlanetImpact, 'r', zorder = 5)
+                  coordinates[LastOcculted:,1]  + PlanetImpact, 'k', zorder = 5)
     else:
         plt.plot(-coordinates[::,0], 
-                  coordinates[::,1] + PlanetImpact, 'r', zorder = 5)
+                  coordinates[::,1] + PlanetImpact, 'k', zorder = 5)
 
     # Planet
-    PlanetCircle = plt.Circle((0, PlanetImpact), PlanetRadius, color = 'b', 
+    PlanetCircle = plt.Circle((0, PlanetImpact), PlanetRadius, color = 'k', 
         zorder = 4)
     plt.gcf().gca().add_artist(PlanetCircle)
 
@@ -104,7 +112,7 @@ def modelview(
     else:
         CurrentOrder = 4  # in front of the planet
     MoonCircle = plt.Circle((-coordinates[1,0], 
-        coordinates[1,1] + PlanetImpact), MoonRadius, color = 'r', 
+        coordinates[1,1] + PlanetImpact), MoonRadius, color = 'k', 
         zorder = CurrentOrder)
     plt.gcf().gca().add_artist(MoonCircle)
     # Square not functional?
@@ -135,7 +143,7 @@ def riverwithoutnoise(
     coordinates = np.zeros((len(time), 3), dtype=np.float) 
     for i in xrange(len(time)):
         coordinates[i,::] = Ellipse.xyzPos(time[i]) 
-    StretchSpace = 5  # Grid size [multiples of planet transit duration]
+    StretchSpace = 5  # 5 Grid size [multiples of planet transit duration]
     UnStretchedTransitDuration = PlanetPeriod / pi * arcsin(sqrt(
         (MoonRadius + StellarRadius) ** 2) / PlanetAxis)
     cache = np.zeros((NumberOfSamples, Quality), dtype=np.float)
@@ -188,7 +196,7 @@ def river(
     Quality, NumberOfSamples, Noise):
     """Draw the river plot. Get map from RiverWithoutNoise."""
 
-    StretchSpace = 5  # times longer than a transit duration   
+    StretchSpace = 5  # 5 times longer than a transit duration   
     map = riverwithoutnoise(  # Get noiseless map
         StellarRadius, limb1, limb2,
         PlanetRadius, PlanetAxis, PlanetImpact, PlanetPeriod,
