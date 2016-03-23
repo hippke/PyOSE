@@ -1,5 +1,10 @@
 ## Stacked exomoons with the Orbital Sampling Effect 
-*We are currently preparing a paper to introduce this new code. Until then, please cite this repository in combination with Heller 2014, ApJ 787*
+*If you make use of this code, please cite this repository in combination with our paper: 
+MODELING THE ORBITAL SAMPLING EFFECT OF EXTRASOLAR MOONS
+René Heller, Michael Hippke, and Brian Jackson
+The Astrophysical Journal, Volume 820, Number 2
+http://iopscience.iop.org/article/10.3847/0004-637X/820/2/88/meta
+*
 
 How to get started:
 
