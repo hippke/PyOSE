@@ -3,8 +3,7 @@
 MODELING THE ORBITAL SAMPLING EFFECT OF EXTRASOLAR MOONS
 René Heller, Michael Hippke, and Brian Jackson
 The Astrophysical Journal, Volume 820, Number 2
-http://iopscience.iop.org/article/10.3847/0004-637X/820/2/88/meta
-*
+http://iopscience.iop.org/article/10.3847/0004-637X/820/2/88/meta*
 
 How to get started:
 
